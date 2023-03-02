@@ -13,7 +13,7 @@ def encode(password):
     encoded_password = ''
     for num in range(len(password)):
         encoded_password += str((int(num)+3)%10)
-    # print(encoded_password)  this is used to test out if function works with input
+    #print(encoded_password)  #this is used to test out if function works with input
     return encoded_password
 
 
@@ -46,3 +46,4 @@ if __name__ == "__main__":
             if user_option == 3:
                 break
 
+# this is a comment used to see if file is pushed from pycharm
