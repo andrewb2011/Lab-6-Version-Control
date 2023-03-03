@@ -18,6 +18,27 @@ def encode(password):
 
 
 
+'''Modified below by:
+    Harit Palta
+    Group 37 
+    Lab 6 Version Control'''
+
+#added decode function
+def decode(password):
+    # string to store decoded password
+    decoded_pass = ''
+
+    # decoding of each digit
+    for num in range(len(password)):
+        decoded_pass += str((int(password)-3)%10)  # shifting 3 digit down and mod keeps value within 0-9
+
+    # return decoded password
+    return decoded_pass
+
+
+
+
+
 if __name__ == "__main__":
 
         user_option = 1     # used any number but 3 to enter loop
