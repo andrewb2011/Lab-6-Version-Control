@@ -41,7 +41,9 @@ if __name__ == "__main__":
                 encode(user_password)
                 print('Your password has been encoded and stored!')
                 print()
-
+            if user_option == 2:
+                print(f'The encoded password is {encode(user_password)}, and the original password is {user_password}')
+                print()
 
             if user_option == 3:
                 break
